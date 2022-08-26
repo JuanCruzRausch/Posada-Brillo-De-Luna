@@ -39,7 +39,7 @@ function Landing() {
                 slideIndex === index + 1 ? "slider active-anim" : "slider"
               }
             >
-              <h2>{obj.title}</h2>
+              <h2 className="h2-landing">{obj.title}</h2>
               <p className="p-landing">{obj.text}</p>
               {slideIndex === 1 ? (
                 <NavLink className="btn-langing" to="/nosotros">

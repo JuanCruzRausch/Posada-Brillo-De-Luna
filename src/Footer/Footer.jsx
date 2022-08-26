@@ -55,13 +55,13 @@ function Footer() {
           </p>
           <div className="redes">
             <div>
-              <AiOutlineInstagram />
+              <a className="icon-redes" target="_blank" href="https://instagram.com/posadabrillodeluna?igshid=YmMyMTA2M2Y="><AiOutlineInstagram /></a>
             </div>
             <div>
-              <AiOutlineFacebook />
+              <a className="icon-redes" target="_blank" href="https://www.facebook.com/posada.brillodeluna"><AiOutlineFacebook /></a>
             </div>
             <div>
-              <AiOutlineWhatsApp />
+              <a className="icon-redes" target="_blank" href="https://api.whatsapp.com/send?phone=5493777218787"><AiOutlineWhatsApp /></a>
             </div>
           </div>
         </div>

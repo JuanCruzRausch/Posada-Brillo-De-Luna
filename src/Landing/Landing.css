@@ -1,6 +1,6 @@
 .landing-container {
   display: flex;
-  padding: 40px;
+  padding: 100px 25px 50px 25px;
 }
 
 .backimg1 {
@@ -77,7 +77,7 @@
 
 .titles {
   padding: 2 0px;
-  width: 50%;
+  width: 50%; 
 }
 
 .carrusel {
@@ -86,7 +86,8 @@
   align-items: center;
   justify-content: center;
   display: flex;
-  width: 100%;
+  margin: 0;
+  padding-left: 40px;
   height: 100%;
   border-radius: 10px;
   position: relative;
@@ -104,15 +105,18 @@
   transition: opacity ease-in-out 0.4s;
 }
 
-h2 {
-  position: relative;
+.h2-landing {
+  
+  
   color: #fff;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .p-landing {
   position: relative;
   color: var(--white);
+  width: 100%;
+  margin-top: 0px;
 }
 
 .btn-langing {
@@ -132,10 +136,10 @@ h2 {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1025px) {
-  h2 {
+@media screen and (max-width: 1024px) {
+  .h2-landing {
     font-size: 2.5rem;
-    margin-bottom: -50px;
+    
   }
   .p-landing {
     font-size: 0.9rem;
@@ -147,13 +151,13 @@ h2 {
     padding: 10px 10px;
   }
 
-  .landing-container {
-    padding: 80px 15px;
+  .carrusel{
+    padding-left: 0px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  h2 {
+  .h2-landing {
     font-size: 2rem;
     margin-bottom: 0px;
   }
@@ -166,10 +170,15 @@ h2 {
 
   .landing-container {
     padding: 80px 15px;
+    width: 100%;
     flex-direction: column;
   }
 
   .p-landing {
     display: none;
+  }
+
+  .carrusel{
+    width: 100%;
   }
 }
