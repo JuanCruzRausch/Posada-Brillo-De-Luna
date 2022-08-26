@@ -1,0 +1,110 @@
+.contacto-container{
+    min-height: 100vh;
+    padding-top: 100px;
+    background: var(--bg-variant);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("bg-patern3.png");
+}
+
+.img-contact{
+    background-image: url("contacto.jpg");
+    width: 100%;
+    background-size: cover;
+}
+
+.form-contacto{
+    padding-top: 100px;
+}
+
+.container.contact_container {
+    width: 80%;
+    margin: 20px;
+    padding: 1rem;
+    border: 2px var(--primary) solid;
+    box-shadow: 10px 10px 10px rgb(0,0,0,0.4);
+    border-radius: 5px;
+    display: grid;
+    background: #fff;
+    grid-template-columns: 30% 58%;
+    gap: 12%;
+    transition: all 0.5s;
+  }
+  
+  .container.contact_container:hover {
+    
+    box-shadow: 10px 10px 30px rgb(0,0,0,0.4);
+    
+  }
+  .contact_options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  .contact_option {
+    background: var(--white);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+  }
+  
+  .contact_option:hover {
+    background: transparent;
+    border-color: var(--primary);
+    
+  }
+  
+  .contact_option h4 {
+    color: var(--color-white);
+  }
+  
+  .contact_option h5 {
+    color: var(--color-light);
+  }
+  
+  .contact_option-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact_option a {
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 1rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid var(--color-primary-variant);
+    resize: none;
+    color: var(--color-white);
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .container.contact_container {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .container.contact_container {
+      width: var(--container-width-sm);
+    }
+  }
