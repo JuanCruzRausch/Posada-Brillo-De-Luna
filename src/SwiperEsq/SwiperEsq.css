@@ -1,0 +1,134 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mySwiper {
+  width: 60%;
+  height: 200px;
+  margin: 20px 0;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  border: solid 1px black;
+}
+
+.prev.next {
+  border: solid 1px black;
+}
+
+.swiper-button-next::after {
+  color: #000;
+}
+
+.swiper-button-prev::after {
+  color: #000;
+}
+
+.swiper-pagination-bullet {
+  border: solid 5px #000;
+}
+
+@media screen and (max-width: 1024px) {
+  .contacto-inicio {
+    height: 350px;
+  }
+  .contact-btn {
+    font-size: 1rem;
+    padding: 15px 25px;
+    margin-top: 30px;
+  }
+  .contact-h3 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+  }
+  .servicios {
+    margin: 4rem 3rem;
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mySwiper {
+    width: 100%;
+  }
+
+  .img-conatiner {
+    width: 100%;
+    height: 200px;
+  }
+
+  p {
+    width: 90%;
+  }
+
+  .pre-carrousel {
+    margin: 20px 0;
+  }
+
+  .contacto-inicio {
+    height: 250px;
+  }
+  .contact-btn {
+    font-size: 0.8rem;
+    padding: 10px 15px;
+    margin-top: 10px;
+  }
+  .contact-h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  .servicios {
+    margin: 3rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  .h2-service {
+    font-size: 2rem;
+  }
+  .icon-service {
+    font-size: 1.5rem;
+    color: var(--primary);
+  }
+
+  .h4-service {
+    font-size: 1rem;
+  }
+
+  .p-service {
+    font-size: 1rem;
+    margin: 0;
+  }
+}

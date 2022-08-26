@@ -1,0 +1,156 @@
+.footer-cont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 5rem;
+  background: var(--bg);
+}
+
+.footer-head {
+  display: flex;
+  color: var(--white);
+  justify-content: center;
+}
+
+.footer-copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.p-copy {
+  display: flex;
+  font-size: 0.8rem;
+  color: var(--white);
+  justify-content: center;
+  margin: 0;
+}
+
+.a-copy {
+  text-decoration: none;
+  color: var(--bg);
+  transition: all 0.5s;
+  color: var(--white);
+  font-weight: 600;
+  text-decoration: underline 2px transparent;
+}
+
+.a-copy:hover {
+  text-decoration: underline 2px var(--primary);
+}
+
+.div-head {
+  width: 30%;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.div-head-name {
+  width: 30%;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: auto 0;
+}
+
+.h3-copy {
+  border-bottom: solid 2px var(--primary);
+  width: 80%;
+  font-size: 1rem;
+  margin: 20px 0 0 0;
+}
+
+.div-head p {
+  font-size: 0.7rem;
+  width: 90%;
+  margin-top: 10px;
+  color: var(--white);
+}
+
+.h3-copy-name {
+  display: flex;
+  justify-content: center;
+  border: solid 2px var(--white);
+  width: 80%;
+  margin: 20px 0 20px 0;
+  font-size: 2rem;
+}
+
+.div-head a {
+  color: var(--white);
+  text-decoration: none;
+  padding-left: 10px;
+  transition: all 0.5s;
+  text-decoration: underline 2px transparent;
+}
+
+.div-head a:hover {
+  text-decoration: underline 2px var(--primary);
+}
+
+.icon-map {
+  font-size: 1rem;
+}
+
+.redes {
+  display: flex;
+}
+.redes div {
+  font-size: 2rem;
+  margin: 10px 20px 0;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.redes div:hover {
+  color: var(--primary);
+}
+
+@media screen and (max-width: 1024px) {
+  .footer-cont {
+    padding: 1rem 0;
+  }
+  .p-copy {
+    font-size: 0.6rem;
+  }
+  .div-head p {
+    font-size: 0.6rem;
+  }
+  .h3-copy-name {
+    font-size: 1.3rem;
+  }
+  .redes div {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-head {
+    flex-direction: column;
+  }
+  .footer-head div {
+    width: 100%;
+  }
+  .div-head-name {
+    display: none;
+  }
+  .redes div {
+    margin-top: 20px;
+    border: solid 2px var(--primary);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+
+    font-size: 2rem;
+    border-radius: 5px;
+  }
+}

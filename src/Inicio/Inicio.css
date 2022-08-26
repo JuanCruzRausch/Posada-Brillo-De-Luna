@@ -1,0 +1,236 @@
+.container-in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.img-conatiner {
+  margin-top: 20px;
+  height: 300px;
+  width: 70%;
+  position: relative;
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-conatiner::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.4) url("img5.jpg");
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  background-size: cover;
+}
+
+.img-h3 {
+  position: relative;
+  color: #fff;
+  margin-top: 20px;
+  font-size: 2rem;
+  text-decoration: underline var(--primary);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.img-h3:hover {
+  font-size: 2.2rem;
+}
+
+.pre-carrousel {
+  background: #eee;
+  padding: 20px 10px;
+  border: solid 1px #efefee;
+}
+
+p {
+  color: black;
+  width: 60%;
+  margin-top: 50px;
+}
+
+.carrousel {
+  border: solid 2px black;
+  height: 200px;
+}
+
+.contacto-inicio {
+  height: 500px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contacto-inicio::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.4) url("img6.jpg");
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  background-size: cover;
+}
+
+.contact-btn {
+  position: relative;
+  padding: 20px 50px;
+  color: var(--white);
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border: solid 2px var(--white);
+  margin-top: 40px;
+  transition: all 0.5s;
+}
+
+.contact-btn:hover {
+  background: var(--white);
+  color: #000;
+}
+
+.contact-h3 {
+  position: relative;
+  color: var(--white);
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.service-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.h2-service {
+  margin-top: 2rem;
+  font-size: 4rem;
+  color: #000;
+  text-decoration: underline 3px var(--primary);
+}
+
+.servicios {
+  margin: 3rem 7rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
+
+.service {
+  display: flex;
+}
+
+.icon-service {
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+.h4-service {
+  font-size: 1.5rem;
+  margin-left: 20px;
+}
+
+.p-service {
+  font-size: 1rem;
+  margin: 0 0 0 20px;
+  width: 100%;
+  color: var(--bg);
+}
+
+.reseñas {
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("bg-patern3.png");
+}
+
+@media screen and (max-width: 1024px) {
+  .contacto-inicio {
+    height: 350px;
+  }
+  .contact-btn {
+    font-size: 1rem;
+    padding: 15px 25px;
+    margin-top: 30px;
+  }
+  .contact-h3 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+  }
+  .servicios {
+    margin: 4rem 3rem;
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mySwiper {
+    width: 100%;
+  }
+
+  .img-conatiner {
+    width: 100%;
+    height: 200px;
+  }
+
+  p {
+    width: 90%;
+  }
+
+  .pre-carrousel {
+    margin: 20px 0;
+  }
+
+  .contacto-inicio {
+    height: 250px;
+  }
+  .contact-btn {
+    font-size: 0.8rem;
+    padding: 10px 15px;
+    margin-top: 10px;
+  }
+  .contact-h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  .servicios {
+    margin: 3rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  .h2-service {
+    font-size: 2rem;
+  }
+  .icon-service {
+    font-size: 1.5rem;
+    color: var(--primary);
+  }
+
+  .h4-service {
+    font-size: 1rem;
+  }
+
+  .p-service {
+    font-size: 1rem;
+    margin: 0;
+  }
+}
