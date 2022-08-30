@@ -19,6 +19,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: darken;
+  background-position: center;
 }
 
 .backimg2 {
@@ -37,6 +38,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: darken;
+  background-position: center;
 }
 
 .backimg3 {
@@ -55,6 +57,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: darken;
+  background-position: center;
 }
 
 .backimg4 {
@@ -73,11 +76,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: darken;
+  background-position: center;
 }
 
 .titles {
   padding: 2 0px;
-  width: 50%; 
+  width: 50%;
 }
 
 .carrusel {
@@ -106,8 +110,6 @@
 }
 
 .h2-landing {
-  
-  
   color: #fff;
   font-size: 4rem;
 }
@@ -139,7 +141,6 @@
 @media screen and (max-width: 1024px) {
   .h2-landing {
     font-size: 2.5rem;
-    
   }
   .p-landing {
     font-size: 0.9rem;
@@ -151,7 +152,7 @@
     padding: 10px 10px;
   }
 
-  .carrusel{
+  .carrusel {
     padding-left: 0px;
   }
 }
@@ -178,7 +179,7 @@
     display: none;
   }
 
-  .carrusel{
+  .carrusel {
     width: 100%;
   }
 }

@@ -46,7 +46,9 @@ function Inicio() {
         <SwiperEsq />
         <div className="contacto-inicio">
           <h3 className="contact-h3">¡Alójate en Posada Brillo de Luna!</h3>
-          <button className="contact-btn">Contáctanos</button>
+          <a href="/contacto">
+            <button className="contact-btn">Contáctanos</button>
+          </a>
         </div>
         <div className="service-container">
           <div>

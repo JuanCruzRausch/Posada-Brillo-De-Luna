@@ -33,23 +33,23 @@
 }
 
 @media screen and (max-width: 768px) {
-  .nav.active {
-    height: 90px;
-    z-index: 20;
-  }
-
   .slide-bar {
     display: flex;
     position: fixed;
     z-index: 5;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
     margin-top: 80px;
     background-color: var(--bg);
     border-bottom: 2px solid var(--primary);
     top: -100%;
     transition: 850ms;
-    padding: 20px 0 20px 43%;
+    padding: 20px;
+  }
+
+  .title-name {
+    font-size: 1.3rem;
   }
   .slide-bar.active {
     top: 0;
