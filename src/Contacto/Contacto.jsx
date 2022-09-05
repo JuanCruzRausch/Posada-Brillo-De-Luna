@@ -2,6 +2,8 @@ import "./Contacto.css";
 import React, { useRef } from "react";
 import { MdOutlineEmail } from "react-icons/md";
 import { ImWhatsapp } from "react-icons/im";
+
+import { GrMap } from "react-icons/gr";
 import emailjs from "emailjs-com";
 
 function Contacto() {
@@ -27,6 +29,7 @@ function Contacto() {
       );
     e.target.reset();
   };
+
   return (
     <div className="contacto-container">
       <div className="img-contact">
@@ -46,30 +49,47 @@ function Contacto() {
       </div>
       <div className="form-container">
         <div className="btns-contact">
-          <a
-            className="anchor-btn"
-            href="mailto:posadabrillodelunaesquina@hotmail.com"
-            target="_blank"
-          >
-            <article className="contact_option-mail">
-              <MdOutlineEmail className="contact_option-icon" />
-              <h4>Email</h4>
-
-              <p>Enviar un mensaje</p>
-            </article>
-          </a>
-          <a
-            className="anchor-btn"
-            href="https://api.whatsapp.com/send?phone=5493777218787"
-            target="_blank"
-          >
-            <article className="contact_option-wpp">
-              <ImWhatsapp className="contact_option-icon" />
-              <h4>Whatsapp</h4>
-
-              <p>Enviar un mensaje</p>
-            </article>
-          </a>
+          <div className="btn-cont">
+            <h4 className="h4-contact">
+              <GrMap className="icon-contact" /> Dirección
+            </h4>
+            <p>
+              José hernández 820 3196 Esquina, Provincia de Corrientes,
+              Argentina
+            </p>
+            <a
+              href="https://www.google.com/maps/place/POSADA+BRILLO+DE+LUNA/@-30.0272341,-59.5373754,17z/data=!3m1!4b1!4m8!3m7!1s0x944c8bb3876b1023:0x7c2dc1ef6ec93d2a!5m2!4m1!1i2!8m2!3d-30.0272388!4d-59.5351867"
+              target="_blank"
+            >
+              <button className="g-btn">Ir a Google maps</button>
+            </a>
+          </div>
+          <div className="btn-cont email">
+            <h4 className="h4-contact">
+              <MdOutlineEmail className="icon-contact" />
+              Email
+            </h4>
+            <p>posadabrillodelunaesquina@hotmail.com</p>
+            <a
+              href="mailto:posadabrillodelunaesquina@hotmail.com"
+              target="_blank"
+            >
+              <button className="e-btn">Enviar Correo</button>
+            </a>
+          </div>
+          <div className="btn-cont">
+            <h4 className="h4-contact">
+              <ImWhatsapp className="icon-contact" />
+              Whatsapp
+            </h4>
+            <p>(+54) 93777218787</p>
+            <a
+              href="https://api.whatsapp.com/send?phone=5493777218787"
+              target="_blank"
+            >
+              <button className="w-btn">Enviar Mensaje</button>
+            </a>
+          </div>
         </div>
         <div className="form-contact">
           <h3>Completa los campos y envianos un mail con tu consulta</h3>
@@ -107,11 +127,3 @@ function Contacto() {
 }
 
 export default Contacto;
-
-{
-  /* <div className="container contact_container">
-  <div className="img-contact">Mandanos un Mail o mensaje en wpp B)</div>
-  <div className="contact_options">
-  </div>
-</div> */
-}

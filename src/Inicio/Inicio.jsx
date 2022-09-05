@@ -55,7 +55,7 @@ function Inicio() {
             <h2 className="h2-service">Servicios</h2>
           </div>
           <div className="servicios">
-            <div className="service">
+            <div className="service1">
               <div>
                 <FaSwimmingPool className="icon-service" />
               </div>
@@ -67,7 +67,7 @@ function Inicio() {
                 </p>
               </div>
             </div>
-            <div className="service">
+            <div className="service1">
               <div>
                 <FaSwimmingPool className="icon-service" />
               </div>
@@ -79,7 +79,7 @@ function Inicio() {
                 </p>
               </div>
             </div>
-            <div className="service">
+            <div className="service1">
               <div>
                 <FaSwimmingPool className="icon-service" />
               </div>
@@ -91,7 +91,7 @@ function Inicio() {
                 </p>
               </div>
             </div>
-            <div className="service">
+            <div className="service1">
               <div>
                 <FaSwimmingPool className="icon-service" />
               </div>
@@ -104,7 +104,7 @@ function Inicio() {
               </div>
             </div>
 
-            <div className="service">
+            <div className="service1">
               <div>
                 <FaSwimmingPool className="icon-service" />
               </div>
@@ -116,7 +116,7 @@ function Inicio() {
                 </p>
               </div>
             </div>
-            <div className="service">
+            <div className="service1">
               <div>
                 <FaSwimmingPool className="icon-service" />
               </div>

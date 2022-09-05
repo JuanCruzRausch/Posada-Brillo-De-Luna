@@ -80,11 +80,11 @@
 }
 
 .btns-contact {
-  width: 25%;
+  width: 50%;
 }
 
 .form-contact {
-  width: 75%;
+  width: 50%;
 }
 
 .form-contact h3 {
@@ -96,85 +96,6 @@
   margin: 10px auto;
   border: 1px solid #bbb;
   border-radius: 5px;
-}
-
-.contact_option-mail {
-  background: #fff;
-  padding: 1rem 5px;
-  border-radius: 1.2rem;
-  width: 80%;
-  text-align: center;
-  cursor: pointer;
-  border: 2px solid var(--primary);
-  transition: all 0.5s;
-  margin-bottom: 30px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-}
-
-.contact_option-mail:hover {
-  background: #fff;
-  border-color: rgb(35, 93, 174);
-  color: rgb(69, 140, 207);
-  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.3);
-}
-
-.contact_option-mail h4 {
-  color: var(--color-white);
-}
-
-.contact_option-icon {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.contact_option-mail a {
-  margin-top: 0.7rem;
-  display: inline-block;
-  font-size: 1rem;
-}
-
-.contact_option-wpp {
-  background: #fff;
-  padding: 1rem 5px;
-  border-radius: 1.2rem;
-  width: 80%;
-  text-align: center;
-  cursor: pointer;
-  border: 2px solid var(--primary);
-  transition: all 0.5s;
-  margin-bottom: 30px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-}
-
-.contact_option-wpp:hover {
-  background: #fff;
-  color: rgb(74, 144, 74);
-  border-color: green;
-  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.3);
-}
-
-.contact_option-wpp h4 {
-  color: var(--color-white);
-}
-
-.contact_option-wpp a {
-  margin-top: 0.7rem;
-  display: inline-block;
-  font-size: 1rem;
-}
-
-.anchor-btn {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  color: var(--bg);
-}
-
-.anchor-btn p {
-  width: 100%;
-  margin-top: 0;
 }
 
 form {
@@ -211,6 +132,71 @@ form {
   border: 1px solid var(--primary);
 }
 
+.h4-contact {
+  font-size: 1.8rem;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: underline 2px var(--primary);
+}
+
+.icon-contact {
+  font-size: 2rem;
+}
+
+.btn-cont {
+  width: 90%;
+  padding: 10px 0;
+}
+
+.email {
+  border-top: solid 1px #aaa;
+  border-bottom: solid 1px #aaa;
+}
+
+.btn-cont p {
+  width: 100%;
+  margin-top: 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.btn-cont button {
+  border: 1px solid var(--primary);
+  padding: 10px 0px;
+  margin: 10px 0;
+  cursor: pointer;
+  width: 40%;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #fff;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.g-btn:hover {
+  background: rgba(255, 129, 129, 0.6);
+  border: 1px solid rgb(159, 11, 11);
+  color: var(--bg-variant);
+}
+
+.e-btn:hover {
+  background: rgba(129, 182, 255, 0.6);
+  border: 1px solid rgb(11, 46, 159);
+  color: var(--bg-variant);
+}
+
+.w-btn:hover {
+  background: rgba(129, 255, 161, 0.6);
+  border: 1px solid rgb(11, 159, 28);
+  color: var(--bg-variant);
+}
+
+.map-container {
+  width: 100%;
+  height: 500px;
+}
 @media screen and (max-width: 1024px) {
   .img-contact {
     height: 160px;
@@ -226,6 +212,26 @@ form {
   }
   .form-container {
     padding: 50px 10px;
+  }
+
+  .form-contact h3 {
+    width: 100%;
+  }
+  .btn-cont {
+    width: 95%;
+  }
+  .h4-contact {
+    font-size: 1.5rem;
+  }
+  .icon-contact {
+    font-size: 1.6rem;
+  }
+  .btn-cont p {
+    font-size: 1rem;
+  }
+  .btn-cont button {
+    font-size: 0.8rem;
+    width: 40%;
   }
 }
 
@@ -250,6 +256,7 @@ form {
   }
   .btns-contact {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;

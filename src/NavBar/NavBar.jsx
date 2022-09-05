@@ -15,7 +15,7 @@ import { MdOutlineVolunteerActivism } from "react-icons/md";
 
 function NavBar() {
   const [scroll, setScroll] = useState(false);
-  const [slideBar, setSlideBar] = useState(false);
+  const [slideBar, setSlideBar] = useState(true);
 
   const showSidebar = () => {
     setSlideBar(!slideBar);
@@ -30,7 +30,6 @@ function NavBar() {
   };
 
   window.addEventListener("scroll", changeBackgruound);
-  console.log(slideBar);
 
   return (
     <>
@@ -50,29 +49,40 @@ function NavBar() {
           <NavLink to="/galeria" activeStyle>
             Galeria
           </NavLink>
-          <NavLink to="/contacto" activeStyle>
-            Contacto
-          </NavLink>
-          <NavBtnLink to="/contacto">Reserva</NavBtnLink>
+          <NavBtnLink to="/contacto">Contacto</NavBtnLink>
         </NavMenu>
       </Nav>
       <div className={slideBar ? "slide-bar" : "slide-bar active"}>
-        <NavLinkSlide to="/" activeStyle>
+        <NavLinkSlide onClick={() => setSlideBar(!slideBar)} to="/" activeStyle>
           <AiOutlineHome className="icon-slide" /> Inicio
         </NavLinkSlide>
-        <NavLinkSlide to="/servicios" activeStyle>
+        <NavLinkSlide
+          onClick={() => setSlideBar(!slideBar)}
+          to="/servicios"
+          activeStyle
+        >
           <MdOutlineVolunteerActivism className="icon-slide" />
           Servicios
         </NavLinkSlide>
-        <NavLinkSlide to="/galeria" activeStyle>
+        <NavLinkSlide
+          onClick={() => setSlideBar(!slideBar)}
+          to="/galeria"
+          activeStyle
+        >
           <HiOutlinePhotograph className="icon-slide" />
           Galeria
         </NavLinkSlide>
-        <NavLinkSlide to="/contacto" activeStyle>
+        <NavLinkSlide
+          onClick={() => setSlideBar(!slideBar)}
+          to="/contacto"
+          activeStyle
+        >
           <AiOutlineContacts className="icon-slide" />
           Contacto
         </NavLinkSlide>
-        <NavBtnLinkSlide to="/contacto">Reserva</NavBtnLinkSlide>
+        <NavBtnLinkSlide onClick={() => setSlideBar(!slideBar)} to="/contacto">
+          Reserva
+        </NavBtnLinkSlide>
       </div>
     </>
   );

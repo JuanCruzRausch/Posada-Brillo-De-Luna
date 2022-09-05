@@ -4,8 +4,7 @@ import Galeria from "./Galeria/Galeria";
 import Contacto from "./Contacto/Contacto";
 import Servicio from "./Servicios/Servicios";
 import NavBar from "./NavBar/NavBar";
-import About from "./About/About";
-import Footer from "./Footer/Footer"
+import Footer from "./Footer/Footer";
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
         <Route exact path="/servicios" element={<Servicio />} />
         <Route exact path="/galeria" element={<Galeria />} />
         <Route exact path="/contacto" element={<Contacto />} />
-        <Route exact path="/nosotros" element={<About />} />
       </Routes>
       <Footer />
     </div>

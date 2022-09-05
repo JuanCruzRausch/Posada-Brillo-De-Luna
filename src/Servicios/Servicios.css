@@ -1,0 +1,175 @@
+.service-container2 {
+  min-height: 100vh;
+  background: var(--bg-variant);
+  padding-top: 100px;
+  background-image: url("bg-patern3.png");
+}
+
+.img-service {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-service::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.6) url("Servicios.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-position: center;
+}
+
+.img-service h2 {
+  position: relative;
+  color: var(--white);
+  font-size: 3.5rem;
+  text-decoration: underline 2px var(--primary);
+}
+
+.services-cont {
+  width: 100%;
+  padding: 50px 40px;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.service {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+  transition: all 0.5s;
+  border-radius: 15px;
+}
+
+.service:hover {
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.img-ser-cont {
+  width: 25%;
+}
+
+.img-ser {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s;
+}
+
+.img-ser:hover {
+  transform: scale(1.1);
+}
+
+.izq-img {
+  border-right: 3px solid var(--primary);
+}
+.der-img {
+  border-left: 3px solid var(--primary);
+}
+
+.serv-explain {
+  width: 75%;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.serv-explain p {
+  width: 100%;
+  padding: 0 20px;
+  margin-top: 0;
+}
+
+.icon-ser {
+  font-size: 3rem;
+  color: var(--primary);
+}
+
+.header h3 {
+  font-size: 3rem;
+  text-decoration: underline var(--primary) 2px;
+}
+
+@media screen and (max-width: 1024px) {
+  .img-ser-cont {
+    width: 40%;
+  }
+  .serv-explain {
+    width: 60%;
+  }
+  .icon-ser {
+    font-size: 2rem;
+  }
+
+  .img-service {
+    height: 160px;
+  }
+
+  .header h3 {
+    font-size: 2rem;
+  }
+  .serv-explain p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .services-cont {
+    padding: 50px 10px;
+  }
+
+  .service {
+    flex-direction: column;
+  }
+
+  .img-ser-cont {
+    width: 100%;
+  }
+  .serv-explain {
+    width: 100%;
+  }
+  .izq-img {
+    border-right: 0px;
+    border-bottom: 3px solid var(--primary);
+  }
+  .der-img {
+    border-left: 0px;
+    border-bottom: 3px solid var(--primary);
+  }
+
+  .der-serv {
+    flex-direction: column-reverse;
+  }
+
+  .serv-explain p {
+    font-size: 0.8rem;
+    padding: 0;
+  }
+
+  .img-service h2 {
+    font-size: 2rem;
+  }
+  .img-service {
+    height: 100px;
+  }
+}

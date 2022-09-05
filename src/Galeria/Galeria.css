@@ -1,0 +1,36 @@
+.galeria-container {
+  min-height: 100vh;
+  background: var(--bg-variant);
+  padding-top: 100px;
+  background-image: url("bg-patern3.png");
+}
+
+.img-galeria {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-galeria::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.6) url("Galeria.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-position: center;
+}
+
+.img-galeria h2 {
+  position: relative;
+  color: var(--white);
+  font-size: 3.5rem;
+  text-decoration: underline 2px var(--primary);
+}

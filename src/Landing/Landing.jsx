@@ -42,18 +42,14 @@ function Landing() {
               <h2 className="h2-landing">{obj.title}</h2>
               <p className="p-landing">{obj.text}</p>
               {slideIndex === 1 ? (
-                <NavLink className="btn-langing" to="/nosotros">
-                  Conoce más sobre nosotros!
-                </NavLink>
-              ) : slideIndex === 2 ? (
                 <NavLink className="btn-langing" to="/contacto">
                   Has tu consulta!
                 </NavLink>
-              ) : slideIndex === 3 ? (
+              ) : slideIndex === 2 ? (
                 <NavLink className="btn-langing" to="/galeria">
                   Ir a galeria
                 </NavLink>
-              ) : slideIndex === 4 ? (
+              ) : slideIndex === 3 ? (
                 <NavLink className="btn-langing" to="/servicios">
                   Ver servicios
                 </NavLink>
@@ -80,7 +76,7 @@ function Landing() {
           <BtnSlider moveSlide={nextSlide} direction={"next"} />
           <BtnSlider moveSlide={prevSlide} direction={"prev"} />
           <div className="container-dots">
-            {Array.from({ length: 4 }).map((item, index) => (
+            {Array.from({ length: 3 }).map((item, index) => (
               <div
                 onClick={() => moveDot(index + 1)}
                 className={slideIndex === index + 1 ? "dot active" : "dot"}
