@@ -30,7 +30,7 @@ function SwiperRes() {
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper2"
+        className="mySwiper4"
       >
         <SwiperSlide>
           <div className="div-swiper">

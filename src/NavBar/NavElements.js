@@ -95,12 +95,14 @@ export const NavBtnLinkSlide = styled(Link)`
   background: var(--primary);
   padding: 10px 20px;
   color: var(--white);
+
   border: none;
   outline: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-  margin-left: 20px;
+
+  margin: 20px;
   &:hover {
     transition: all 0.2s ease-in-out;
     background: var(--white);

@@ -14,7 +14,7 @@ function SwiperEsq() {
   return (
     <>
       <Swiper
-        spaceBetween={30}
+        spaceBetween={20}
         centeredSlides={true}
         autoplay={{
           delay: 2500,
@@ -28,51 +28,15 @@ function SwiperEsq() {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <a href="/galeria" className="card">
-            1
-          </a>
-        </SwiperSlide>
-        <SwiperSlide>
-          <a href="/galeria" className="card">
-            2
-          </a>
-        </SwiperSlide>
-        <SwiperSlide>
-          <a href="/galeria" className="card">
-            3
-          </a>
-        </SwiperSlide>
-        <SwiperSlide>
-          <a href="/galeria" className="card">
-            4
-          </a>
-        </SwiperSlide>
-        <SwiperSlide>
-          <a href="/galeria" className="card">
-            5
-          </a>
-        </SwiperSlide>
-        <SwiperSlide>
-          <a href="/galeria" className="card">
-            6
-          </a>
-        </SwiperSlide>
-        <SwiperSlide>
-          <a href="/galeria" className="card">
-            7
-          </a>
-        </SwiperSlide>
-        <SwiperSlide>
-          <a href="/galeria" className="card">
-            8
-          </a>
-        </SwiperSlide>
-        <SwiperSlide>
-          <a href="/galeria" className="card">
-            9
-          </a>
-        </SwiperSlide>
+        {Array.from({ length: 10 }).map((el, index) => {
+          return (
+            <SwiperSlide key={index}>
+              <a href="/galeria" className="card">
+                <img src={`esquina${index + 1}.jpg`} />
+              </a>
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </>
   );

@@ -53,36 +53,39 @@ function NavBar() {
         </NavMenu>
       </Nav>
       <div className={slideBar ? "slide-bar" : "slide-bar active"}>
-        <NavLinkSlide onClick={() => setSlideBar(!slideBar)} to="/" activeStyle>
-          <AiOutlineHome className="icon-slide" /> Inicio
-        </NavLinkSlide>
-        <NavLinkSlide
-          onClick={() => setSlideBar(!slideBar)}
-          to="/servicios"
-          activeStyle
-        >
-          <MdOutlineVolunteerActivism className="icon-slide" />
-          Servicios
-        </NavLinkSlide>
-        <NavLinkSlide
-          onClick={() => setSlideBar(!slideBar)}
-          to="/galeria"
-          activeStyle
-        >
-          <HiOutlinePhotograph className="icon-slide" />
-          Galeria
-        </NavLinkSlide>
-        <NavLinkSlide
-          onClick={() => setSlideBar(!slideBar)}
-          to="/contacto"
-          activeStyle
-        >
-          <AiOutlineContacts className="icon-slide" />
-          Contacto
-        </NavLinkSlide>
-        <NavBtnLinkSlide onClick={() => setSlideBar(!slideBar)} to="/contacto">
-          Reserva
-        </NavBtnLinkSlide>
+        <div>
+          <NavLinkSlide
+            onClick={() => setSlideBar(!slideBar)}
+            to="/"
+            activeStyle
+          >
+            <AiOutlineHome className="icon-slide" /> Inicio
+          </NavLinkSlide>
+          <NavLinkSlide
+            onClick={() => setSlideBar(!slideBar)}
+            to="/servicios"
+            activeStyle
+          >
+            <MdOutlineVolunteerActivism className="icon-slide" />
+            Servicios
+          </NavLinkSlide>
+          <NavLinkSlide
+            onClick={() => setSlideBar(!slideBar)}
+            to="/galeria"
+            activeStyle
+          >
+            <HiOutlinePhotograph className="icon-slide" />
+            Galeria
+          </NavLinkSlide>
+          <div className="div-btn-slide">
+            <NavBtnLinkSlide
+              onClick={() => setSlideBar(!slideBar)}
+              to="/contacto"
+            >
+              Contacto
+            </NavBtnLinkSlide>
+          </div>
+        </div>
       </div>
     </>
   );
