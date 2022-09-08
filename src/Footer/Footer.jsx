@@ -12,13 +12,14 @@ function Footer() {
         <div className="div-head">
           <h3 className="h3-copy">Nosotros</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Brillo de Luna es una posada que se encuentra ubicada sobre el Río
+            Corriente, a unas 20 cuadras del centro de la ciudad. Se encuentra
+            en la entrada de la ciudad, acceso sur. Es atendida por sus propios
+            dueños y lo que más le gusta a la gente del alojamiento es la
+            atención, las comidas caseras y la presencia de sus dueños.
+            Destacamos en la ciudad de Esquina por la imponente vista hacia el
+            Rio Corrientes y nuestra gastronomía derivada mayormente de la Pesca
+            Deportiva.
           </p>
         </div>
         <div className="div-head-name">

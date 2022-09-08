@@ -15,6 +15,7 @@ import { useEffect, useState } from "react";
 function Galeria() {
   const [showGalery, setShowGalery] = useState(false);
   const [nameShowGalery, setNameShowGalery] = useState("esquina");
+  const [num, setNum] = useState(0);
 
   return (
     <div className="galeria-container">
@@ -69,11 +70,12 @@ function Galeria() {
                   <div
                     onClick={() => {
                       setShowGalery(!showGalery);
-                      setNameShowGalery("esquina");
+                      setNameShowGalery("posada");
+                      setNum(1);
                     }}
                     className="slide-galery"
                   >
-                    <img src={`esquina${index + 1}.jpg`} />
+                    <img src={`posada${index + 1}.jpg`} />
                   </div>
                 </SwiperSlide>
               );
@@ -127,11 +129,12 @@ function Galeria() {
                   <div
                     onClick={() => {
                       setShowGalery(!showGalery);
-                      setNameShowGalery("esquina");
+                      setNameShowGalery("comodidades");
+                      setNum(1);
                     }}
                     className="slide-galery"
                   >
-                    <img src={`esquina${index + 1}.jpg`} />
+                    <img src={`comodidades${index + 1}.jpg`} />
                   </div>
                 </SwiperSlide>
               );
@@ -185,11 +188,12 @@ function Galeria() {
                   <div
                     onClick={() => {
                       setShowGalery(!showGalery);
-                      setNameShowGalery("esquina");
+                      setNameShowGalery("servicio");
+                      setNum(1);
                     }}
                     className="slide-galery"
                   >
-                    <img src={`esquina${index + 1}.jpg`} />
+                    <img src={`servicio${index + 1}.jpg`} />
                   </div>
                 </SwiperSlide>
               );
@@ -244,6 +248,7 @@ function Galeria() {
                     onClick={() => {
                       setShowGalery(!showGalery);
                       setNameShowGalery("esquina");
+                      setNum(1);
                     }}
                     className="slide-galery"
                   >

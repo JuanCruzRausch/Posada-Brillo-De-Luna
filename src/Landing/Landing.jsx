@@ -27,7 +27,7 @@ function Landing() {
   const moveDot = (index) => {
     setSlideIndex(index);
   };
-  console.log(slideIndex);
+
   return (
     <div className={`container landing-container backimg${slideIndex}`}>
       <div className="carrusel">

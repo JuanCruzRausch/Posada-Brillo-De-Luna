@@ -60,25 +60,6 @@
   background-position: center;
 }
 
-.backimg4 {
-  position: relative;
-  height: 100vh;
-  transition: all 0.5s;
-}
-.backimg4::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background: rgba(0, 0, 0, 0.6) url("img4.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: darken;
-  background-position: center;
-}
-
 .titles {
   padding: 2 0px;
   width: 50%;
@@ -117,7 +98,7 @@
 .p-landing {
   position: relative;
   color: var(--white);
-  width: 100%;
+  width: 95%;
   margin-top: 0px;
 }
 

@@ -3,6 +3,7 @@
   background: var(--bg-variant);
   padding-top: 100px;
   background-image: url("bg-patern3.png");
+  border-bottom: solid 2px var(--primary);
 }
 
 .img-galeria {

@@ -1,7 +1,10 @@
 import React from "react";
 import Landing from "../Landing/Landing";
 import "./Inicio.css";
-import { FaSwimmingPool } from "react-icons/fa";
+import { FaSwimmingPool, FaTree } from "react-icons/fa";
+import { GiFishingHook } from "react-icons/gi";
+import { IoRestaurantSharp, IoBed } from "react-icons/io5";
+import { TbSoccerField } from "react-icons/tb";
 import SwiperEsq from "../SwiperEsq/SwiperEsq";
 import SwiperRes from "../SwiperRes/SwiperRes";
 
@@ -20,22 +23,31 @@ function Inicio() {
           </a>
         </div>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Esquina es una ciudad situada en el rincón sudoeste de la provincia de
+          Corrientes. Además de ser cabecera del departamento Esquina, posee
+          destacada importancia turística al ser sede de la Fiesta Nacional del
+          Pacú. La unión de los ríos Corriente y Paraná, genera en esta ciudad
+          una costa bellísima, que da lugar a hermosas playas y a la pesca de
+          una amplia variedad de especies. Los ríos, esteros, lagunas y montes,
+          constituyen el lugar ideal para la pesca. Allí encontrarán ejemplares
+          de surubíes, dorados y patíes, además de manduvés, moncholos, pacúes,
+          bogas, amarillos, armados, rayas, bagre amarillo y salmón criollo.
+          Entre las modalidades existentes, aficionados y profesionales de esta
+          disciplina, podrán aplicar en Esquina: fly casting, spinning, pesca
+          con mosca y trolling, disfrutando al mismo tiempo del deporte y del
+          aire libre
         </p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Esquina esta acodada en el Rio Corriente, nos ofrece la posibilidad de
+          disfrutar de sus playas y balnearios recostados al sol de su litoral
+          ribereño. Siendo típicas playas de rio convoca a locales y visitantes
+          a relajarse y dejarse llevar por el ambiente, protegida por un delta,
+          la calma del Rio Paraná y Rio Corriente que permiten calmas y cómodas
+          playas, un espacio ideal para el esparcimiento de grandes y chicos. Se
+          puede disfrutar de un momento distinto, en comunión con la naturaleza,
+          que nos abraza y nos enamora. Realizar un safari fotográfico o
+          avistaje de flora y fauna nos permite conocer y aprender acerca de la
+          riqueza de la región y su gente, además de sacar fotos imperdibles.
         </p>
         <div className="pre-carrousel">
           <h4>
@@ -57,13 +69,40 @@ function Inicio() {
           <div className="servicios">
             <div className="service1">
               <div>
-                <FaSwimmingPool className="icon-service" />
+                <GiFishingHook className="icon-service" />
               </div>
               <div>
-                <h4 className="h4-service">Picina</h4>
+                <h4 className="h4-service">Pesca</h4>
                 <p className="p-service">
-                  La pileta tiene 3.50 x 7mts con una profundidad de 1.60 metros
-                  en la parte mas honda.
+                  Contamos con una playa privada en la cual se puede pescar de
+                  costa, podrás pescar desde tu lancha en el río Corrientes
+                  gracias a nuestra amplia bajada de lancha, y para tener una
+                  experiencia magnífica tenemos guía en la cual podrás disfrutar
+                  de una pesca completa y un delicioso almuerzo en la isla.
+                </p>
+              </div>
+            </div>
+            <div className="service1">
+              <div>
+                <IoRestaurantSharp className="icon-service" />
+              </div>
+              <div>
+                <h4 className="h4-service">Gastronomia</h4>
+                <p className="p-service">
+                  Contamos con un menú del día donde encontraras la mejor comida
+                  casera de Equina Corrientes.
+                </p>
+              </div>
+            </div>
+            <div className="service1">
+              <div>
+                <FaTree className="icon-service" />
+              </div>
+              <div>
+                <h4 className="h4-service">Gran Patio</h4>
+                <p className="p-service">
+                  Grandes extensiones de césped y arboledas le proporcionan un
+                  hermoso ambiente para relajarse.
                 </p>
               </div>
             </div>
@@ -72,59 +111,34 @@ function Inicio() {
                 <FaSwimmingPool className="icon-service" />
               </div>
               <div>
-                <h4 className="h4-service">Picina</h4>
+                <h4 className="h4-service">Piscina</h4>
                 <p className="p-service">
-                  La pileta tiene 3.50 x 7mts con una profundidad de 1.60 metros
-                  en la parte mas honda.
-                </p>
-              </div>
-            </div>
-            <div className="service1">
-              <div>
-                <FaSwimmingPool className="icon-service" />
-              </div>
-              <div>
-                <h4 className="h4-service">Picina</h4>
-                <p className="p-service">
-                  La pileta tiene 3.50 x 7mts con una profundidad de 1.60 metros
-                  en la parte mas honda.
-                </p>
-              </div>
-            </div>
-            <div className="service1">
-              <div>
-                <FaSwimmingPool className="icon-service" />
-              </div>
-              <div>
-                <h4 className="h4-service">Picina</h4>
-                <p className="p-service">
-                  La pileta tiene 3.50 x 7mts con una profundidad de 1.60 metros
-                  en la parte mas honda.
+                  Podras refrescarte en nuesta piscina de 4 x 6 mts.
                 </p>
               </div>
             </div>
 
             <div className="service1">
               <div>
-                <FaSwimmingPool className="icon-service" />
+                <IoBed className="icon-service" />
               </div>
               <div>
-                <h4 className="h4-service">Picina</h4>
+                <h4 className="h4-service">Habitaciones Equipadas</h4>
                 <p className="p-service">
-                  La pileta tiene 3.50 x 7mts con una profundidad de 1.60 metros
-                  en la parte mas honda.
+                  Las habitaciones son grandes, con todas las comodidades, aire
+                  acondicionado, plasma, somier, baño privado.
                 </p>
               </div>
             </div>
             <div className="service1">
               <div>
-                <FaSwimmingPool className="icon-service" />
+                <TbSoccerField className="icon-service" />
               </div>
               <div>
-                <h4 className="h4-service">Picina</h4>
+                <h4 className="h4-service">Pádel/Fútbol</h4>
                 <p className="p-service">
-                  La pileta tiene 3.50 x 7mts con una profundidad de 1.60 metros
-                  en la parte mas honda.
+                  Podrás pasar un divertido momento gracias a nuestras canchas
+                  de Pádel y Fútbol.
                 </p>
               </div>
             </div>
