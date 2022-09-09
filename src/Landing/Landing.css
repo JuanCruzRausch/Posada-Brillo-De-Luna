@@ -164,3 +164,9 @@
     width: 100%;
   }
 }
+
+@media screen and (max-height: 520px) {
+  .p-landing{
+    display: none;
+  }
+}
