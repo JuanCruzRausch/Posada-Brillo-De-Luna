@@ -4,7 +4,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { ImWhatsapp } from "react-icons/im";
 
 import { GrMap } from "react-icons/gr";
-import emailjs from "emailjs-com";
+import { helpHttp } from "../helpHttp";
 
 function Contacto() {
   const form = useRef();
@@ -12,22 +12,15 @@ function Contacto() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_5dpstml",
-        "template_6nfzjam",
-        form.current,
-        "NqRHLHRC2_eAX9Ahu"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
+    helpHttp().post(
+      "https://formsubmit.co/ajax/juancruz_rausch@hotmail.com",{body: form, headers: {
+        "Content-Type": "aplication/json",
+        "Accept": "application/json"
+      }}
+    ).then( res => {alert("Email enviado!")}
+      
+    )
+
   };
 
   return (
@@ -93,7 +86,7 @@ function Contacto() {
         </div>
         <div className="form-contact">
           <h3>Completa los campos y envianos un mail con tu consulta</h3>
-          <form ref={form} onSubmit={sendEmail}>
+          <form action="https://formsubmit.co/ajax/juancruz_rausch@hotmail.com" method="POST">
             <input
               className="input"
               type="text"
