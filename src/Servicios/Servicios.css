@@ -22,7 +22,7 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background: rgba(0, 0, 0, 0.6) url("Servicios.jpg");
+  background: rgba(0, 0, 0, 0.6) url("../../public/Servicios.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: darken;
