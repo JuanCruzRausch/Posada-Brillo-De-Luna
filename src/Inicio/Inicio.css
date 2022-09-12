@@ -23,7 +23,7 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background: rgba(0, 0, 0, 0.4) url("img5.jpg");
+  background: rgba(0, 0, 0, 0.4) url("../../public/img5.jpg");
   background-repeat: no-repeat;
   background-blend-mode: darken;
   background-size: cover;
@@ -79,7 +79,7 @@ p {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background: rgba(0, 0, 0, 0.4) url("img6.jpg");
+  background: rgba(0, 0, 0, 0.4) url("../../public/img6.jpg");
   background-repeat: no-repeat;
   background-blend-mode: darken;
   background-size: cover;
@@ -159,7 +159,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("bg-patern3.png");
+  background-image: url("../../public/bg-patern3.png");
 }
 
 @media screen and (max-width: 1024px) {

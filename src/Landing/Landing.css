@@ -15,7 +15,7 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background: rgba(0, 0, 0, 0.6) url("img1.jpg");
+  background: rgba(0, 0, 0, 0.6) url("../../public/img1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: darken;
@@ -34,7 +34,7 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background: rgba(0, 0, 0, 0.6) url("img2.jpg");
+  background: rgba(0, 0, 0, 0.6) url("../../public/img2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: darken;
@@ -53,7 +53,7 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background: rgba(0, 0, 0, 0.6) url("img3.jpg");
+  background: rgba(0, 0, 0, 0.6) url("../../public/img3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: darken;
@@ -166,7 +166,7 @@
 }
 
 @media screen and (max-height: 520px) {
-  .p-landing{
+  .p-landing {
     display: none;
   }
 }
