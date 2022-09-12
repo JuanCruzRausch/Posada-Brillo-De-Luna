@@ -7,39 +7,45 @@ import { GrMap } from "react-icons/gr";
 import { helpHttp } from "../helper/helpHttp";
 
 function Contacto() {
-  const [form, setForm] = useState({name: "", });
+  const [form, setForm] = useState({});
   const [loading, setLoading] = useState(false);
   const [response, setResponse] = useState(null);
 
   const handleChange = (e) => {
-    const {name, value } = e.trget
+    const { name, value } = e?.target;
     setForm({
       ...form,
       [name]: value,
-    })
-  }
+    });
+  };
   const sendEmail = (e) => {
     e.preventDefault();
 
     setLoading(true);
-    console.log(JSON.stringify(form))
+    console.log(JSON.stringify(form));
 
     helpHttp()
-      .post("https://formsubmit.co/ajax/juancruz_rausch@hotmail.com", {
-        body: form,
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-      })
+      .post(
+        "https://formsubmit.co/ajax/posadabrillodelunaesquina@hotmail.com",
+        {
+          body: form,
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+        }
+      )
       .then((res) => {
-        console.log(res)
+        console.log(res);
         setLoading(false);
         setResponse(true);
         setTimeout(() => {
           setResponse(false);
         }, 5000);
-      }).catch((e) => {console.log("Error: " + e)})
+      })
+      .catch((e) => {
+        console.log("Error: " + e);
+      });
   };
 
   return (
@@ -107,17 +113,15 @@ function Contacto() {
           <h3>Completa los campos y envianos un mail con tu consulta</h3>
           <form onSubmit={sendEmail} method="POST">
             <input
-              onChange={e => handleChange()}
+              onChange={(e) => handleChange(e)}
               className="input"
               type="text"
               name="name"
-
-
               placeholder="Nombre y Apellido"
               required
             />
             <input
-              onChange={e => handleChange(e)}
+              onChange={(e) => handleChange(e)}
               className="input"
               type="email"
               name="email"
@@ -126,7 +130,7 @@ function Contacto() {
             />
 
             <textarea
-              onChange={e => handleChange(e)}
+              onChange={(e) => handleChange(e)}
               className="input"
               name="message"
               rows="7"
