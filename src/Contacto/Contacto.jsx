@@ -7,14 +7,22 @@ import { GrMap } from "react-icons/gr";
 import { helpHttp } from "../helper/helpHttp";
 
 function Contacto() {
-  const form = useRef();
+  const [form, setForm] = useState({name: "", });
   const [loading, setLoading] = useState(false);
   const [response, setResponse] = useState(null);
 
+  const handleChange = (e) => {
+    const {name, value } = e.trget
+    setForm({
+      ...form,
+      [name]: value,
+    })
+  }
   const sendEmail = (e) => {
     e.preventDefault();
 
     setLoading(true);
+    console.log(JSON.stringify(form))
 
     helpHttp()
       .post("https://formsubmit.co/ajax/juancruz_rausch@hotmail.com", {
@@ -25,12 +33,13 @@ function Contacto() {
         },
       })
       .then((res) => {
+        console.log(res)
         setLoading(false);
         setResponse(true);
         setTimeout(() => {
           setResponse(false);
         }, 5000);
-      });
+      }).catch((e) => {console.log("Error: " + e)})
   };
 
   return (
@@ -96,15 +105,19 @@ function Contacto() {
         </div>
         <div className="form-contact">
           <h3>Completa los campos y envianos un mail con tu consulta</h3>
-          <form ref={form} onSubmit={sendEmail} method="POST">
+          <form onSubmit={sendEmail} method="POST">
             <input
+              onChange={e => handleChange()}
               className="input"
               type="text"
               name="name"
+
+
               placeholder="Nombre y Apellido"
               required
             />
             <input
+              onChange={e => handleChange(e)}
               className="input"
               type="email"
               name="email"
@@ -113,6 +126,7 @@ function Contacto() {
             />
 
             <textarea
+              onChange={e => handleChange(e)}
               className="input"
               name="message"
               rows="7"
