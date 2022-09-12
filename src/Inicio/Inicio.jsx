@@ -7,6 +7,7 @@ import { IoRestaurantSharp, IoBed } from "react-icons/io5";
 import { TbSoccerField } from "react-icons/tb";
 import SwiperEsq from "../SwiperEsq/SwiperEsq";
 import SwiperRes from "../SwiperRes/SwiperRes";
+import { Link } from "react-router-dom";
 
 function Inicio() {
   return (
@@ -58,9 +59,9 @@ function Inicio() {
         <SwiperEsq />
         <div className="contacto-inicio">
           <h3 className="contact-h3">¡Alójate en Posada Brillo de Luna!</h3>
-          <a href="/contacto">
+          <Link to="/contacto">
             <button className="contact-btn">Contáctanos</button>
-          </a>
+          </Link>
         </div>
         <div className="service-container">
           <div>

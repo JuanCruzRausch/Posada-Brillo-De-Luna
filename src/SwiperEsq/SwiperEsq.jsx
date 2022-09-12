@@ -9,6 +9,7 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
+import { Link } from "react-router-dom";
 
 function SwiperEsq() {
   return (
@@ -31,9 +32,9 @@ function SwiperEsq() {
         {Array.from({ length: 10 }).map((el, index) => {
           return (
             <SwiperSlide key={index}>
-              <a href="/galeria" className="card">
+              <Link to="/galeria" className="card">
                 <img src={`esquina${index + 1}.jpg`} />
-              </a>
+              </Link>
             </SwiperSlide>
           );
         })}

@@ -12,6 +12,7 @@ import { GiFishingHook, GiThermometerCold } from "react-icons/gi";
 import { IoRestaurantSharp, IoBed, IoTvOutline } from "react-icons/io5";
 import { TbSoccerField } from "react-icons/tb";
 import { RiTempHotLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 function Servicios() {
   return (
@@ -25,7 +26,7 @@ function Servicios() {
             Nuestra posada está pensada para que tengas una estadía confortable,
             placentera y con todos los servicios que necesitás a tu disposición.
           </h4>
-          <a href="/contacto">CONTACTANOS</a>
+          <Link to="/contacto">CONTACTANOS</Link>
         </div>
         <div className="general-services">
           <div className="gen-ser">
@@ -62,9 +63,9 @@ function Servicios() {
           </div>
         </div>
         <div className="service">
-          <a className="img-ser-cont" href="/galeria">
+          <Link className="img-ser-cont" to="/galeria">
             <img className="img-ser izq-img" src="servicio8.jpg" />
-          </a>
+          </Link>
           <div className="serv-explain">
             <div className="header">
               <GiFishingHook className="icon-ser" />
@@ -93,14 +94,14 @@ function Servicios() {
               encontraría en la posada.
             </p>
           </div>
-          <a className="img-ser-cont" href="/galeria">
+          <Link className="img-ser-cont" to="/galeria">
             <img className="img-ser der-img" src="servicio6.jpg" />
-          </a>
+          </Link>
         </div>
         <div className="service">
-          <a className="img-ser-cont" href="/galeria">
+          <Link className="img-ser-cont" to="/galeria">
             <img className="img-ser izq-img" src="posada10.jpg" />
-          </a>
+          </Link>
           <div className="serv-explain">
             <div className="header">
               <FaTree className="icon-ser" />
@@ -126,14 +127,14 @@ function Servicios() {
               nuestra posada.
             </p>
           </div>
-          <a className="img-ser-cont" href="/galeria">
+          <Link className="img-ser-cont" to="/galeria">
             <img className="img-ser der-img" src="servicio2.jpg" />
-          </a>
+          </Link>
         </div>
         <div className="service">
-          <a className="img-ser-cont" href="/galeria">
+          <Link className="img-ser-cont" to="/galeria">
             <img className="img-ser izq-img" src="comodidades1.jpg" />
-          </a>
+          </Link>
           <div className="serv-explain">
             <div className="header">
               <IoBed className="icon-ser" />
@@ -157,9 +158,9 @@ function Servicios() {
               Pádel y Fútbol.
             </p>
           </div>
-          <a className="img-ser-cont" href="/galeria">
+          <Link className="img-ser-cont" to="/galeria">
             <img className="img-ser der-img" src="servicio3.jpg" />
-          </a>
+          </Link>
         </div>
       </div>
     </div>
