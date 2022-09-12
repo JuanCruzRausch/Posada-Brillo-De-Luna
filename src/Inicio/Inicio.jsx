@@ -8,6 +8,7 @@ import { TbSoccerField } from "react-icons/tb";
 import SwiperEsq from "../SwiperEsq/SwiperEsq";
 import SwiperRes from "../SwiperRes/SwiperRes";
 import { Link } from "react-router-dom";
+import { scrollToTop } from "../helper/scrollToTop";
 
 function Inicio() {
   return (
@@ -59,7 +60,7 @@ function Inicio() {
         <SwiperEsq />
         <div className="contacto-inicio">
           <h3 className="contact-h3">¡Alójate en Posada Brillo de Luna!</h3>
-          <Link to="/contacto">
+          <Link onClick={scrollToTop} to="/contacto">
             <button className="contact-btn">Contáctanos</button>
           </Link>
         </div>

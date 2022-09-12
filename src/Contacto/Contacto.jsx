@@ -22,7 +22,6 @@ function Contacto() {
     e.preventDefault();
 
     setLoading(true);
-    console.log(JSON.stringify(form));
 
     helpHttp()
       .post(
@@ -36,7 +35,6 @@ function Contacto() {
         }
       )
       .then((res) => {
-        console.log(res);
         setLoading(false);
         setResponse(true);
         setTimeout(() => {

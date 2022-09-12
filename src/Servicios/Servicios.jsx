@@ -13,6 +13,7 @@ import { IoRestaurantSharp, IoBed, IoTvOutline } from "react-icons/io5";
 import { TbSoccerField } from "react-icons/tb";
 import { RiTempHotLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
+import { scrollToTop } from "../helper/scrollToTop";
 
 function Servicios() {
   return (
@@ -26,7 +27,9 @@ function Servicios() {
             Nuestra posada está pensada para que tengas una estadía confortable,
             placentera y con todos los servicios que necesitás a tu disposición.
           </h4>
-          <Link to="/contacto">CONTACTANOS</Link>
+          <Link onClick={scrollToTop} to="/contacto">
+            CONTACTANOS
+          </Link>
         </div>
         <div className="general-services">
           <div className="gen-ser">
@@ -63,7 +66,7 @@ function Servicios() {
           </div>
         </div>
         <div className="service">
-          <Link className="img-ser-cont" to="/galeria">
+          <Link onClick={scrollToTop} className="img-ser-cont" to="/galeria">
             <img className="img-ser izq-img" src="servicio8.jpg" />
           </Link>
           <div className="serv-explain">
@@ -94,12 +97,12 @@ function Servicios() {
               encontraría en la posada.
             </p>
           </div>
-          <Link className="img-ser-cont" to="/galeria">
+          <Link onClick={scrollToTop} className="img-ser-cont" to="/galeria">
             <img className="img-ser der-img" src="servicio6.jpg" />
           </Link>
         </div>
         <div className="service">
-          <Link className="img-ser-cont" to="/galeria">
+          <Link onClick={scrollToTop} className="img-ser-cont" to="/galeria">
             <img className="img-ser izq-img" src="posada10.jpg" />
           </Link>
           <div className="serv-explain">
@@ -127,12 +130,12 @@ function Servicios() {
               nuestra posada.
             </p>
           </div>
-          <Link className="img-ser-cont" to="/galeria">
+          <Link onClick={scrollToTop} className="img-ser-cont" to="/galeria">
             <img className="img-ser der-img" src="servicio2.jpg" />
           </Link>
         </div>
         <div className="service">
-          <Link className="img-ser-cont" to="/galeria">
+          <Link onClick={scrollToTop} className="img-ser-cont" to="/galeria">
             <img className="img-ser izq-img" src="comodidades1.jpg" />
           </Link>
           <div className="serv-explain">
@@ -158,7 +161,7 @@ function Servicios() {
               Pádel y Fútbol.
             </p>
           </div>
-          <Link className="img-ser-cont" to="/galeria">
+          <Link onClick={scrollToTop} className="img-ser-cont" to="/galeria">
             <img className="img-ser der-img" src="servicio3.jpg" />
           </Link>
         </div>
