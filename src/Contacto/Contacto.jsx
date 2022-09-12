@@ -40,6 +40,7 @@ function Contacto() {
         setTimeout(() => {
           setResponse(false);
         }, 5000);
+        e.target.reset();
       })
       .catch((e) => {
         console.log("Error: " + e);
