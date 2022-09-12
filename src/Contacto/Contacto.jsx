@@ -1,26 +1,36 @@
 import "./Contacto.css";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { MdOutlineEmail } from "react-icons/md";
 import { ImWhatsapp } from "react-icons/im";
 
 import { GrMap } from "react-icons/gr";
-import { helpHttp } from "../helpHttp";
+import { helpHttp } from "../helper/helpHttp";
 
 function Contacto() {
   const form = useRef();
+  const [loading, setLoading] = useState(false);
+  const [response, setResponse] = useState(null);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    helpHttp().post(
-      "https://formsubmit.co/ajax/juancruz_rausch@hotmail.com",{body: form, headers: {
-        "Content-Type": "aplication/json",
-        "Accept": "application/json"
-      }}
-    ).then( res => {alert("Email enviado!")}
-      
-    )
+    setLoading(true);
 
+    helpHttp()
+      .post("https://formsubmit.co/ajax/juancruz_rausch@hotmail.com", {
+        body: form,
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+      })
+      .then((res) => {
+        setLoading(false);
+        setResponse(true);
+        setTimeout(() => {
+          setResponse(false);
+        }, 5000);
+      });
   };
 
   return (
@@ -86,7 +96,7 @@ function Contacto() {
         </div>
         <div className="form-contact">
           <h3>Completa los campos y envianos un mail con tu consulta</h3>
-          <form action="https://formsubmit.co/ajax/juancruz_rausch@hotmail.com" method="POST">
+          <form ref={form} onSubmit={sendEmail} method="POST">
             <input
               className="input"
               type="text"
@@ -113,6 +123,8 @@ function Contacto() {
               Enviar
             </button>
           </form>
+          {loading && <div>Enviando...</div>}
+          {response && <div>Mensaje enviado con exito</div>}
         </div>
       </div>
     </div>
